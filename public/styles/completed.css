@@ -1,0 +1,26 @@
+@import "registration.css";
+body{
+    color: white;
+}
+
+#registrationBlock, #registrationBlock a{
+    margin-top: 10%;
+    padding-top: 30px;
+    width: 60%;
+    text-align: center;
+    color: white;
+    background: #7240A8;
+    background-color: rgb(175, 57, 157);
+    font-size: 1.3em;
+}
+h1 {
+    margin-top: -0.5em;
+    font-size: 1.1em;
+}
+@media only screen and (max-width: 1000px){
+    #registrationBlock{
+        margin-top: 30%;
+        width: 90%;
+    }
+
+}
