@@ -1,15 +1,27 @@
 @import url(cssReset.css);
 
+html{
+    scroll-behavior: smooth;
+
+}
 
 body{
     
+    
     font-family: 'Rubik', sans-serif;
-    color: rgba(255, 255, 255, 0.829);
-    background-color: #282238;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #0f1a28;
 
+	/*
+	#D08FA6
+	#282238
+	#344A99
+	#5567D3
+	#87B3CE
+	*/
     padding:0;
     line-height: 1.2em;
-
+	
     font-size:1.5em;
     
 
@@ -21,15 +33,38 @@ header{
     height:10%;
     padding:10px;
 
+	
+
     margin:0 auto;
     margin-top:15px;
     text-align: center;
 }
 nav{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
+
+#nameID{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0px 20px 0px 10px;
+    font-size: 1.5em;
+	color: #eee;
+}
+#nameID span{
+	display:inline-block;
+	margin-top:5px;
+	color:#70BDE6;
+	font-size: 1.55em;
+}
+
+/**************************/
+/********underline*********/
+/**************************/
+
+
 .Hoverable {
   position: relative;
   display: inline-block;
@@ -39,14 +74,13 @@ nav{
 
 }
 
-
-
 .Hoverable,
 .Hoverable:hover,
 .Hoverable:focus,
 .Hoverable:active {
   color: #fff;
   text-decoration: none;
+  transition: 0.3s ease all .1s;
 }
 
 .Hoverable::after {
@@ -55,7 +89,7 @@ nav{
 }
 
 .spanHover .Hoverable::after {
-    top: 100%;
+    top: 115%;
     height: 2px;
     width: 0%;
     left: 0%;
@@ -73,8 +107,89 @@ nav{
 
 
 main{
-    margin:15px 10% 5% 10%;
+    margin:40px 10% 5% 10%;
     
+}
+
+#aboutMe{
+	/**/
+	
+}
+#Projects{
+	float:right;
+	text-align:left;
+
+}
+.articles{
+	width:50%;
+	text-align: right;
+
+	padding:10px;
+
+	margin:10px;
+
+	border: #70bde669 solid 2px;
+	border-radius: 10px;
+
+	transition: all 0.15s ease;
+}
+.articles:hover{
+	border: #70bde6a2 solid 2px;
+
+}
+
+
+.articles p{
+	padding:10px;
+
+}
+
+
+.articles h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:800;
+	color:#D600D6;
+	font-size: 2em;
+	padding: 10px 10px 25px 10px;
+
+
+}
+
+main a:visited, main a:link{
+	color:#d600d6d7;
+	transition:all ease 0.2s;
+}
+main a:hover{
+	color:#d600d6;
+}
+.articles h2{
+
+	padding:10px;
+	font-family: 'Montserrat',sans-serif;
+	
+	font-weight:700;
+	color:#70BDE6;
+	font-size:1.5em;
+
+}
+
+.articles section{
+	border: #d600d6a1 solid 2px;
+	border-radius:10px;
+	margin: 10px 7px;
+	transition: all 0.2s ease;
+
+}
+.articles section:hover{
+	border: #d600d6 solid 2px;
+	
+	
+}
+ul{
+	margin-left:25px;
+	padding:10px;
+	list-style-type: disc;
+
 }
 
 #middle{
