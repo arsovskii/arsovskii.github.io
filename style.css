@@ -78,9 +78,14 @@ nav{
 .Hoverable:hover,
 .Hoverable:focus,
 .Hoverable:active {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s ease all .1s;
+    padding:5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease all .1s;
+    border: #0f1a28 2px solid;
+
+
 }
 
 .Hoverable::after {
@@ -88,7 +93,7 @@ nav{
   position: absolute;
 }
 
-.spanHover .Hoverable::after {
+.spanHover .Hoverable::after  {
     top: 115%;
     height: 2px;
     width: 0%;
@@ -102,9 +107,16 @@ nav{
       transition: 0.2s ease all;
   }
 
+.Hoverable:focus{
+    
+    
+    border:#70bde68e 2px solid;
+}
 /*************************/
 
-
+/*************************/
+/********main part********/
+/*************************/
 
 main{
     margin:40px 10% 5% 10%;
@@ -112,7 +124,7 @@ main{
 }
 
 #aboutMe{
-	/**/
+	width: 65%;
 	
 }
 #Projects{
@@ -121,7 +133,7 @@ main{
 
 }
 .articles{
-	width:50%;
+	width:65%;
 	text-align: right;
 
 	padding:10px;
@@ -174,14 +186,14 @@ main a:hover{
 }
 
 .articles section{
-	border: #d600d6a1 solid 2px;
+	border: #70bde669 solid 2px;
 	border-radius:10px;
 	margin: 10px 7px;
-	transition: all 0.2s ease;
+	transition: all 0.3s ease;
 
 }
 .articles section:hover{
-	border: #d600d6 solid 2px;
+	border: #d600d6d5 solid 2px;
 	
 	
 }
@@ -213,3 +225,49 @@ ul{
 }
 
 
+/*************************/
+/********media queries****/
+/*************************/
+
+@media only screen and (max-width: 600px) {
+    .spanHover{
+        display:none;
+    }
+    #nameID{
+        text-align: center;
+        margin:0;
+        font-size: 1.3em;
+    }
+    #nameID span{
+        font-size: 1.5em;
+    }
+    nav{
+        display:block;  
+        width:100%;
+        margin:0 auto;
+    }
+    main{
+        margin:10px 5% 10px 5%;
+        display:flex;
+        flex-direction: column;
+    }
+    .articles h1{
+        text-align: right;
+        line-height: 50px;
+        padding:0px;
+        padding-bottom:5px;
+        
+    }
+    .articles, #aboutMe{
+        margin:0 0 10px 0;
+        width:90%;
+        text-align: left;
+        float:none;
+    }
+    header{
+        text-align: center;
+        width:90%;
+        margin:0 auto;
+    }
+   
+  }
