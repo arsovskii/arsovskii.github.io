@@ -119,8 +119,8 @@ nav{
 /*************************/
 
 main{
-    margin:40px 10% 5% 10%;
-    
+    margin:30px 10% 5% 10%;
+    display:flex;
 }
 
 #aboutMe{
@@ -174,6 +174,7 @@ main a:visited, main a:link{
 main a:hover{
 	color:#d600d6;
 }
+
 .articles h2{
 
 	padding:10px;
@@ -197,6 +198,28 @@ main a:hover{
 	
 	
 }
+.meContainer{
+    
+    margin-top: 25px;
+    margin-right:10px;
+    
+    display:flex;
+
+    text-align: right;
+}
+.me{
+    width:15vw;
+    min-width: 10%;
+    border-radius: 10%;
+    float:right;
+    border:#70bde669 solid 3px;
+    transition: all 0.3s ease;
+}
+.me:hover{
+    
+    border:#d600d6d5 solid 3px;
+}
+
 ul{
 	margin-left:25px;
 	padding:10px;
@@ -224,12 +247,21 @@ ul{
     box-shadow: 10px;
 }
 
+footer{
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 
 /*************************/
 /********media queries****/
 /*************************/
 
 @media only screen and (max-width: 600px) {
+    body{
+        font-size: 1em;
+    }
     .spanHover{
         display:none;
     }
@@ -264,6 +296,15 @@ ul{
         text-align: left;
         float:none;
     }
+
+    .meContainer{
+        
+        width:100%;
+    }
+    .me{
+        width:100%;
+    }
+
     header{
         text-align: center;
         width:90%;
