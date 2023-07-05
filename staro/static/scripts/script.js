@@ -1,6 +1,6 @@
 var songspace = document.getElementById('song');
 
-fetch("./spotify.json")
+fetch("./static/scripts/spotify.json")
 .then(response => {
    return response.json();
 })
@@ -19,6 +19,6 @@ fetch("./spotify.json")
     elementToAdd.target = "_blank";
 
     songspace.appendChild(elementToAdd);
-    console.log("Благодарам на Исидора за листата со песни");
+   
 
 } );

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "ZeroCool";
+    src: url("../static/fonts/ZeroCool.ttf");
+  }
+
+
+
+.nameFont{
+    font-family: "ZeroCool";
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+#background3D > canvas{
+  height:600px;
+  width:auto;
+  filter:brightness(100%);
+  z-index: -999;
+ 
+}

@@ -1,0 +1,23 @@
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #f15bb5ce;
+    font-size:2em;
+    font-weight: 700;
+    color:#111;
+    text-align: center;
+}
+
+
+
+#ime1, #ime2{
+    font-size:0.7em;
+    width:70vw;
+    margin:auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    margin:5vh;
+}

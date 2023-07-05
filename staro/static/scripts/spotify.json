@@ -1,0 +1,1236 @@
+[
+    {
+        "name": "playlist za strana",
+        "public": false,
+        "tracks": [
+            {
+                "name": "Here Comes The Rain",
+                "artist": "Weezer",
+                "album": "OK Human",
+                "uri": "spotify:track:3V7avwgec6ILm4pyqt8XL5"
+            },
+            {
+                "name": "Waiting Room",
+                "artist": "Fugazi",
+                "album": "13 Songs",
+                "uri": "spotify:track:5FFowl1Ve4S5OehL6OywSg"
+            },
+            {
+                "name": "It's Bugsnax!",
+                "artist": "Kero Kero Bonito",
+                "album": "It's Bugsnax!",
+                "uri": "spotify:track:1goNp8FZSjak6UHYsawniU"
+            },
+            {
+                "name": "when you sleep",
+                "artist": "my bloody valentine",
+                "album": "loveless",
+                "uri": "spotify:track:2KylN9C0wNbzLgZNTG9oiU"
+            },
+            {
+                "name": "All Wordz Are Made Up",
+                "artist": "The Voidz",
+                "album": "Virtue",
+                "uri": "spotify:track:2Q7QUy1t3wHhoUWA7v9aYH"
+            },
+            {
+                "name": "Seven",
+                "artist": "Men I Trust",
+                "album": "Seven",
+                "uri": "spotify:track:2dwvxOHnQjndZLowIR6PiS"
+            },
+            {
+                "name": "Lonesome Street",
+                "artist": "Blur",
+                "album": "The Magic Whip",
+                "uri": "spotify:track:2BSDAVUzzQP7wpvcDybmsP"
+            },
+            {
+                "name": "Oh! Darling - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:3UHv8SSIkNUDRBUHJx3Cg6"
+            },
+            {
+                "name": "Honey",
+                "artist": "King Gizzard & The Lizard Wizard",
+                "album": "Honey",
+                "uri": "spotify:track:41XcRfnKcXAZ4kR9SWS7fn"
+            },
+            {
+                "name": "Chamber Of Reflection",
+                "artist": "Mac DeMarco",
+                "album": "Salad Days",
+                "uri": "spotify:track:1MJ5f5EYBC92ADD6xcz7nb"
+            },
+            {
+                "name": "Machu Picchu",
+                "artist": "The Strokes",
+                "album": "Angles",
+                "uri": "spotify:track:6mVD1SfTvlFAPVi7txFL5H"
+            },
+            {
+                "name": "Harness Your Hopes - (B-side)",
+                "artist": "Pavement",
+                "album": "Brighten the Corners: Nicene Creedence Ed.",
+                "uri": "spotify:track:4tggZyGJMNJMooWuRbvN5q"
+            },
+            {
+                "name": "1979 - Remastered 2012",
+                "artist": "The Smashing Pumpkins",
+                "album": "Mellon Collie And The Infinite Sadness (Deluxe Edition)",
+                "uri": "spotify:track:5QLHGv0DfpeXLNFo7SFEy1"
+            },
+            {
+                "name": "Ti veruvam",
+                "artist": "Foltin",
+                "album": "Momoma",
+                "uri": "spotify:track:1pSUseGR1arq4jBBIO4AJY"
+            },
+            {
+                "name": "Skrzhavi Crtezhi",
+                "artist": "Pluto's Doubts",
+                "album": "Sizif",
+                "uri": "spotify:track:1HSgj6uHle8Yzz6qNGezaS"
+            },
+            {
+                "name": "I Promise",
+                "artist": "Radiohead",
+                "album": "OK Computer OKNOTOK 1997 2017",
+                "uri": "spotify:track:6V9PDDZ2pHQCUleRXvRYQ1"
+            },
+            {
+                "name": "21st Century Schizoid Man",
+                "artist": "King Crimson",
+                "album": "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)",
+                "uri": "spotify:track:5yClziwiwTdqRmdPQl3NDz"
+            },
+            {
+                "name": "Don't Look Back In Anger",
+                "artist": "Oasis",
+                "album": "(What's the Story) Morning Glory?",
+                "uri": "spotify:track:3ixTiPABjqkBKPocxq6oIe"
+            },
+            {
+                "name": "Only",
+                "artist": "Nine Inch Nails",
+                "album": "With Teeth (Bonus Tracks)",
+                "uri": "spotify:track:72X2RPQiMoOjQrdI2B9Olu"
+            },
+            {
+                "name": "Head Like A Hole",
+                "artist": "Nine Inch Nails",
+                "album": "Pretty Hate Machine",
+                "uri": "spotify:track:3ckd4YA4LcD3j50rfIVwUe"
+            },
+            {
+                "name": "Hurt",
+                "artist": "Nine Inch Nails",
+                "album": "The Downward Spiral",
+                "uri": "spotify:track:27tX58NOpv1YKQ0abW7EPy"
+            },
+            {
+                "name": "She",
+                "artist": "Green Day",
+                "album": "Dookie",
+                "uri": "spotify:track:4wsQGsdf8D0Bj26cGdvreB"
+            },
+            {
+                "name": "The Pot",
+                "artist": "TOOL",
+                "album": "10,000 Days",
+                "uri": "spotify:track:1lATXTBJDHwawvT1UfxWu3"
+            },
+            {
+                "name": "Vicarious",
+                "artist": "TOOL",
+                "album": "10,000 Days",
+                "uri": "spotify:track:65ShmiE5aLBdcIGr7tHX35"
+            },
+            {
+                "name": "Hodaj",
+                "artist": [
+                    "Porto Morto",
+                    "Darko Rundek"
+                ],
+                "album": "Portofon",
+                "uri": "spotify:track:1xDtAI2Z77zwwwsoIwrp3J"
+            },
+            {
+                "name": "In a Broken Dream",
+                "artist": "Rod Stewart",
+                "album": "The Rod Stewart Sessions 1971-1998",
+                "uri": "spotify:track:3010u1hos2V6BgIICFtjc3"
+            },
+            {
+                "name": "A-Punk",
+                "artist": "Vampire Weekend",
+                "album": "Vampire Weekend",
+                "uri": "spotify:track:5dKBaysNJtfpyNTRa5lqDb"
+            },
+            {
+                "name": "Paranoid",
+                "artist": [
+                    "Kanye West",
+                    "Mr Hudson"
+                ],
+                "album": "808s & Heartbreak (UK Version)",
+                "uri": "spotify:track:5O7CyrJfufo4eQS0IJi8w6"
+            },
+            {
+                "name": "Love Lockdown",
+                "artist": "Kanye West",
+                "album": "808s & Heartbreak (UK Version)",
+                "uri": "spotify:track:0e3wxWUukhX6srtgoaeFoC"
+            },
+            {
+                "name": "Fake Tales Of San Francisco",
+                "artist": "Arctic Monkeys",
+                "album": "Whatever People Say I Am, That's What I'm Not",
+                "uri": "spotify:track:7BuzJmV2h6eBbSDdRaDY7C"
+            },
+            {
+                "name": "One Point Perspective",
+                "artist": "Arctic Monkeys",
+                "album": "Tranquility Base Hotel & Casino",
+                "uri": "spotify:track:1t67WYNfUxfOiwaz7SJ66b"
+            },
+            {
+                "name": "Black Skinhead",
+                "artist": "Kanye West",
+                "album": "Yeezus",
+                "uri": "spotify:track:722tgOgdIbNe3BEyLnejw4"
+            },
+            {
+                "name": "Do You Love Me? - 2011 Remastered Version",
+                "artist": "Nick Cave & The Bad Seeds",
+                "album": "Let Love In (2011 Remastered Version)",
+                "uri": "spotify:track:26sLRGYCSYSnK0cJVtcCAf"
+            },
+            {
+                "name": "Namesti frizura i gladuvaj",
+                "artist": "Bernays Propaganda",
+                "album": "My Personal Holiday",
+                "uri": "spotify:track:4mSj9O7dokmyLvU1KgB9Zb"
+            },
+            {
+                "name": "I Sat By The Ocean",
+                "artist": "Queens of the Stone Age",
+                "album": "...Like Clockwork",
+                "uri": "spotify:track:7oXRMDUzBPekkLRTJhSGvC"
+            },
+            {
+                "name": "Just",
+                "artist": "Radiohead",
+                "album": "The Bends",
+                "uri": "spotify:track:1dyTcli07c77mtQK3ahUZR"
+            },
+            {
+                "name": "Jigsaw Falling Into Place",
+                "artist": "Radiohead",
+                "album": "In Rainbows",
+                "uri": "spotify:track:0YJ9FWWHn9EfnN0lHwbzvV"
+            },
+            {
+                "name": "Disorder - 2007 Remaster",
+                "artist": "Joy Division",
+                "album": "Unknown Pleasures (Collector's Edition)",
+                "uri": "spotify:track:5fbQCQt91LsVgXusFS0CCD"
+            },
+            {
+                "name": "Fell In Love With a Girl",
+                "artist": "The White Stripes",
+                "album": "White Blood Cells",
+                "uri": "spotify:track:21Qsj3cMVCx2xF2EVVNbEu"
+            },
+            {
+                "name": "Bodysnatchers",
+                "artist": "Radiohead",
+                "album": "In Rainbows",
+                "uri": "spotify:track:4pWIwnnqx8k01fuF95UMIg"
+            },
+            {
+                "name": "Love Buzz",
+                "artist": "Nirvana",
+                "album": "Bleach",
+                "uri": "spotify:track:5muVpPu8Fj9fXfDbbqDdrZ"
+            },
+            {
+                "name": "Happiness Is A Warm Gun - Remastered 2009",
+                "artist": "The Beatles",
+                "album": "The Beatles (Remastered)",
+                "uri": "spotify:track:71LsKf3xISiOlY1mj7FFPP"
+            },
+            {
+                "name": "Beetlebum - 2012 Remaster",
+                "artist": "Blur",
+                "album": "Blur (Special Edition)",
+                "uri": "spotify:track:4OHVCeQYPncEwZOtNAJZZx"
+            },
+            {
+                "name": "Cœur croisé",
+                "artist": "Polo & Pan",
+                "album": "Caravelle (Deluxe)",
+                "uri": "spotify:track:4V4SroHS7zs9KkG6X1CEPF"
+            },
+            {
+                "name": "Pays imaginaire",
+                "artist": "Polo & Pan",
+                "album": "Caravelle",
+                "uri": "spotify:track:7i5I4h7r2vkI2r9tgKjy0x"
+            },
+            {
+                "name": "Ice age",
+                "artist": "How To Destroy Angels",
+                "album": "Welcome oblivion",
+                "uri": "spotify:track:0FdDewrvAF7LCd5Vf2FjgR"
+            },
+            {
+                "name": "Part III",
+                "artist": "Crumb",
+                "album": "Jinx",
+                "uri": "spotify:track:4HDLmWf73mge8isanCASnU"
+            },
+            {
+                "name": "M.R.",
+                "artist": "Crumb",
+                "album": "Jinx",
+                "uri": "spotify:track:0GDHyRVlxRVxofJfrw3aVF"
+            },
+            {
+                "name": "Bones",
+                "artist": "Crumb",
+                "album": "Crumb",
+                "uri": "spotify:track:4rL1OrbBCOD5hDgXWPCqW3"
+            },
+            {
+                "name": "Dirge",
+                "artist": "Death In Vegas",
+                "album": "The Contino Sessions",
+                "uri": "spotify:track:015SmK4Fvjv13dVwtGoMC0"
+            },
+            {
+                "name": "Scorpio Rising",
+                "artist": "Death In Vegas",
+                "album": "Edgar Card Sampler",
+                "uri": "spotify:track:4YT8Dv0NNyWgqsMYbyHuA8"
+            },
+            {
+                "name": "Flying",
+                "artist": "Death In Vegas",
+                "album": "The Contino Sessions",
+                "uri": "spotify:track:7mDHSFU6irLS3dPjEckHFN"
+            },
+            {
+                "name": "Borderline",
+                "artist": "Tame Impala",
+                "album": "Borderline",
+                "uri": "spotify:track:3O8X1DE9btbzy4UH9cSX9a"
+            },
+            {
+                "name": "Chitlins Con Carne",
+                "artist": "Kenny Burrell",
+                "album": "Midnight Blue (The Rudy Van Gelder Edition)",
+                "uri": "spotify:track:18A1V1vsy5YgHFqb4galTw"
+            },
+            {
+                "name": "Girl I Love You",
+                "artist": "Massive Attack",
+                "album": "Heligoland",
+                "uri": "spotify:track:3zkPvQZx6ZflYZtw6PZ82X"
+            },
+            {
+                "name": "Since I've Been Loving You - Remaster",
+                "artist": "Led Zeppelin",
+                "album": "Led Zeppelin III (Remaster)",
+                "uri": "spotify:track:1SDiiE3v2z89VxC3aVRKHQ"
+            },
+            {
+                "name": "Meet Me in the Morning",
+                "artist": "Jason Becker",
+                "album": "Perspective",
+                "uri": "spotify:track:6DYO2HCgbntUZdax1ZpWj2"
+            },
+            {
+                "name": "Work This Time",
+                "artist": "King Gizzard & The Lizard Wizard",
+                "album": "Oddments",
+                "uri": "spotify:track:4VtNDouDk6gLgopBhp9di6"
+            },
+            {
+                "name": "East West Link",
+                "artist": "King Gizzard & The Lizard Wizard",
+                "album": "L.W.",
+                "uri": "spotify:track:3hFhPZ9ApoLLQ3bGCDlCDs"
+            },
+            {
+                "name": "Crying in the Dark",
+                "artist": "Nektar",
+                "album": "A Tab in the Ocean",
+                "uri": "spotify:track:2WYtruK39AgxLLSde4Q8Bx"
+            },
+            {
+                "name": "Desolation Valley / Waves",
+                "artist": "Nektar",
+                "album": "A Tab in the Ocean",
+                "uri": "spotify:track:0M35cwztztwy5yzWn9kvof"
+            },
+            {
+                "name": "Srzh",
+                "artist": "Kain",
+                "album": "Pod ova sonce ladno e",
+                "uri": "spotify:track:63f85XhDFvhWLBn410vHVJ"
+            },
+            {
+                "name": "Serpentine",
+                "artist": "Rib",
+                "album": "Rib",
+                "uri": "spotify:track:6bXrmrgFFeqbqEN2PedR74"
+            },
+            {
+                "name": "Rotator",
+                "artist": [
+                    "Rib",
+                    "David Best"
+                ],
+                "album": "Rib",
+                "uri": "spotify:track:6J3vWgzvMCXFhWgL8doLVS"
+            },
+            {
+                "name": "The Adults Are Talking",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:5ruzrDWcT0vuJIOMW7gMnW"
+            },
+            {
+                "name": "No Quarter - Remaster",
+                "artist": "Led Zeppelin",
+                "album": "Houses of the Holy (Remaster)",
+                "uri": "spotify:track:0GRBFjza23Im7Xb16c9AaK"
+            },
+            {
+                "name": "Canopée",
+                "artist": "Polo & Pan",
+                "album": "Caravelle",
+                "uri": "spotify:track:260V7huyJrXnyYe0dFv2Fa"
+            },
+            {
+                "name": "Motion",
+                "artist": "Boy Harsher",
+                "album": "Country Girl Uncut",
+                "uri": "spotify:track:0fKyRv26iIdZo9XCQ56jPO"
+            },
+            {
+                "name": "Watermelon In Easter Hay",
+                "artist": "Frank Zappa",
+                "album": "Joe's Garage Acts I, II & III",
+                "uri": "spotify:track:0Q2dRzhPWFOex89dOjbq5Y"
+            },
+            {
+                "name": "Do Yourself Some Good (Ronin Edit)",
+                "artist": "UNKLE",
+                "album": "Do Yourself Some Good",
+                "uri": "spotify:track:6sZaz1p6jzpQUAisPXlCIQ"
+            },
+            {
+                "name": "Left with a Gun",
+                "artist": "Skinshape",
+                "album": "Oracolo",
+                "uri": "spotify:track:3I2ApTet8MLnGIcbL6isRu"
+            },
+            {
+                "name": "Šapat",
+                "artist": "Svemirko",
+                "album": "Tunguzija",
+                "uri": "spotify:track:2Qfs8V8B7xeYDUH0N9VH8G"
+            },
+            {
+                "name": "Slučajna cesta",
+                "artist": "Svemirko",
+                "album": "Tunguzija",
+                "uri": "spotify:track:4cqLOARJ5IwfdY9Ybq8zxw"
+            },
+            {
+                "name": "Lateralus",
+                "artist": "TOOL",
+                "album": "Lateralus",
+                "uri": "spotify:track:7tvuLLroI0n6uYBWuFig5d"
+            },
+            {
+                "name": "EARFQUAKE",
+                "artist": "Tyler, The Creator",
+                "album": "IGOR",
+                "uri": "spotify:track:5hVghJ4KaYES3BFUATCYn0"
+            },
+            {
+                "name": "Nie Sme Od Skopje",
+                "artist": "The John",
+                "album": "Ti i Jas i Gradot Nash",
+                "uri": "spotify:track:43waGOJ85Mm3MYfbwO8KAP"
+            },
+            {
+                "name": "Ova Ne e Disko",
+                "artist": "The John",
+                "album": "Ti i Jas i Gradot Nash",
+                "uri": "spotify:track:7qG3cmMQP71IjszeL7DPOV"
+            },
+            {
+                "name": "Love Illumination",
+                "artist": "Franz Ferdinand",
+                "album": "Right Thoughts, Right Words, Right Action (Deluxe Edition)",
+                "uri": "spotify:track:06Qha323s06okpZ4LmMX7P"
+            },
+            {
+                "name": "I Bet You Look Good On The Dancefloor",
+                "artist": "Arctic Monkeys",
+                "album": "Whatever People Say I Am, That's What I'm Not",
+                "uri": "spotify:track:3DQVgcqaP3iSMbaKsd57l5"
+            },
+            {
+                "name": "Devojka od bronza",
+                "artist": "Mizar",
+                "album": "Mizar",
+                "uri": "spotify:track:1o3Do7KXNuOq6W0mVZUmA1"
+            },
+            {
+                "name": "You Deserve This",
+                "artist": "Men I Trust",
+                "album": "You Deserve This",
+                "uri": "spotify:track:254ybNwQUpo3zbyBb41KMk"
+            },
+            {
+                "name": "Cars",
+                "artist": "Gary Numan",
+                "album": "The Pleasure Principle",
+                "uri": "spotify:track:6HZ67VImxqr8aMBEEhblzf"
+            },
+            {
+                "name": "Don't You (Forget About Me)",
+                "artist": "Simple Minds",
+                "album": "Themes - Volume 2",
+                "uri": "spotify:track:6mKqTzkCLUNUUdGfIsFQow"
+            },
+            {
+                "name": "Hip To Be Square",
+                "artist": "Huey Lewis & The News",
+                "album": "Fore!",
+                "uri": "spotify:track:648BMGrt98kUbLo24A4vgj"
+            },
+            {
+                "name": "Take Me Out",
+                "artist": "Franz Ferdinand",
+                "album": "Franz Ferdinand",
+                "uri": "spotify:track:6ooluO7DiEhI1zmK94nRCM"
+            },
+            {
+                "name": "Your Love",
+                "artist": "The Outfield",
+                "album": "Play Deep",
+                "uri": "spotify:track:4oDZ5L8izBals6jKBJDBcX"
+            },
+            {
+                "name": "Don't You Want Me",
+                "artist": "The Human League",
+                "album": "Dare!",
+                "uri": "spotify:track:3L7RtEcu1Hw3OXrpnthngx"
+            },
+            {
+                "name": "Just Can't Get Enough",
+                "artist": "Depeche Mode",
+                "album": "Speak And Spell (Deluxe)",
+                "uri": "spotify:track:0qi4b1l0eT3jpzeNHeFXDT"
+            },
+            {
+                "name": "You Spin Me Round (Like a Record)",
+                "artist": "Dead Or Alive",
+                "album": "Youthquake",
+                "uri": "spotify:track:7uHO4AmKtyGa5v5fsElGoC"
+            },
+            {
+                "name": "Sweet Dreams (Are Made of This) - Remastered",
+                "artist": [
+                    "Eurythmics",
+                    "Annie Lennox",
+                    "Dave Stewart"
+                ],
+                "album": "Sweet Dreams (Are Made Of This)",
+                "uri": "spotify:track:1TfqLAPs4K3s2rJMoCokcS"
+            },
+            {
+                "name": "The Passenger",
+                "artist": "Iggy Pop",
+                "album": "Lust For Life",
+                "uri": "spotify:track:3yP0cohcr97BUNJcgvmSVg"
+            },
+            {
+                "name": "Tainted Love",
+                "artist": "Soft Cell",
+                "album": "Non-Stop Erotic Cabaret",
+                "uri": "spotify:track:0cGG2EouYCEEC3xfa0tDFV"
+            },
+            {
+                "name": "(Keep Feeling) Fascination",
+                "artist": "The Human League",
+                "album": "The Greatest Hits",
+                "uri": "spotify:track:3zLZ7AVfbYuy0BnRWLafZg"
+            },
+            {
+                "name": "Once in a Lifetime - 2005 Remaster",
+                "artist": "Talking Heads",
+                "album": "Remain in Light (Deluxe Version)",
+                "uri": "spotify:track:38Ngied9rBORlAbLYNCl4k"
+            },
+            {
+                "name": "Love Will Tear Us Apart",
+                "artist": "Joy Division",
+                "album": "The Best Of",
+                "uri": "spotify:track:2JO3HwMRPeya8bXbtbyPcf"
+            },
+            {
+                "name": "Owner of a Lonely Heart",
+                "artist": "Yes",
+                "album": "90125 (Deluxe Version)",
+                "uri": "spotify:track:0GTK6TesV108Jj5D3MHsYb"
+            },
+            {
+                "name": "I Ran (So Far Away)",
+                "artist": "A Flock Of Seagulls",
+                "album": "A Flock Of Seagulls",
+                "uri": "spotify:track:4OdhffpvG3HxDJMxYOKh97"
+            },
+            {
+                "name": "(I Just) Died In Your Arms",
+                "artist": "Cutting Crew",
+                "album": "Broadcast",
+                "uri": "spotify:track:4ByEFOBuLXpCqvO1kw8Wdm"
+            },
+            {
+                "name": "Call Me",
+                "artist": "Blondie",
+                "album": "Atomic/Atomix",
+                "uri": "spotify:track:4qO03RMQm88DdpTJcxlglY"
+            },
+            {
+                "name": "Blue Monday - 2016 Remaster",
+                "artist": "New Order",
+                "album": "Singles (2016 Remaster)",
+                "uri": "spotify:track:1RSy7B2vfPi84N80QJ6frX"
+            },
+            {
+                "name": "The Great Curve - 2005 Remaster",
+                "artist": "Talking Heads",
+                "album": "Remain in Light (Deluxe Version)",
+                "uri": "spotify:track:35ljOibZSLEjOEPGrbaJsH"
+            },
+            {
+                "name": "Just like Heaven",
+                "artist": "The Cure",
+                "album": "Kiss Me, Kiss Me, Kiss Me",
+                "uri": "spotify:track:76GlO5H5RT6g7y0gev86Nk"
+            },
+            {
+                "name": "There Is a Light That Never Goes Out - 2011 Remaster",
+                "artist": "The Smiths",
+                "album": "The Queen Is Dead",
+                "uri": "spotify:track:0WQiDwKJclirSYG9v5tayI"
+            },
+            {
+                "name": "Bigmouth Strikes Again - 2011 Remaster",
+                "artist": "The Smiths",
+                "album": "The Queen Is Dead",
+                "uri": "spotify:track:2OErSh4oVVAUll0vHxdr6p"
+            },
+            {
+                "name": "Shadowplay - 2007 Remaster",
+                "artist": "Joy Division",
+                "album": "Unknown Pleasures",
+                "uri": "spotify:track:79CfK2gMGf0svanec6LJOj"
+            },
+            {
+                "name": "Need You Tonight",
+                "artist": "INXS",
+                "album": "Kick 30",
+                "uri": "spotify:track:0uI4aw6ms90qFNawk9H9CO"
+            },
+            {
+                "name": "Never Tear Us Apart",
+                "artist": "INXS",
+                "album": "Kick 30",
+                "uri": "spotify:track:0P9M370uqlIjYcEiOGppAV"
+            },
+            {
+                "name": "Born Under Punches (The Heat Goes On) - 2005 Remaster",
+                "artist": "Talking Heads",
+                "album": "Remain in Light (Deluxe Version)",
+                "uri": "spotify:track:4eBCTzBsSjYgrLH5clQf2x"
+            },
+            {
+                "name": "Let's Dance - 1999 Remaster",
+                "artist": "David Bowie",
+                "album": "Let's Dance (1999 Remaster)",
+                "uri": "spotify:track:0F0MA0ns8oXwGw66B2BSXm"
+            },
+            {
+                "name": "Everything She Wants",
+                "artist": "Wham!",
+                "album": "Make It Big",
+                "uri": "spotify:track:5hXEcqQhEjfZdbIZLO8mf2"
+            },
+            {
+                "name": "White Wedding - Part 1 - 2001- Remaster",
+                "artist": "Billy Idol",
+                "album": "Billy Idol",
+                "uri": "spotify:track:4zmx3vEPgRPjRT2CszUsZo"
+            },
+            {
+                "name": "Walk Like an Egyptian",
+                "artist": "The Bangles",
+                "album": "Different Light",
+                "uri": "spotify:track:3BGbqEDio3ocx1v4egIYr6"
+            },
+            {
+                "name": "Video Killed The Radio Star",
+                "artist": "The Buggles",
+                "album": "The Age Of Plastic",
+                "uri": "spotify:track:6t1FIJlZWTQfIZhsGjaulM"
+            },
+            {
+                "name": "My Sharona",
+                "artist": "The Knack",
+                "album": "Get The Knack",
+                "uri": "spotify:track:1HOMkjp0nHMaTnfAkslCQj"
+            },
+            {
+                "name": "Enjoy the Silence",
+                "artist": "Depeche Mode",
+                "album": "The Singles 86-98",
+                "uri": "spotify:track:6WK9dVrRABMkUXFLNlgWFh"
+            },
+            {
+                "name": "Ghost Ship",
+                "artist": "Blur",
+                "album": "The Magic Whip",
+                "uri": "spotify:track:61JDaStnXY3vbaEjliB5WA"
+            },
+            {
+                "name": "The Suburbs",
+                "artist": "Arcade Fire",
+                "album": "The Suburbs",
+                "uri": "spotify:track:2UWdUez9MB9yzL7Y81Mcip"
+            },
+            {
+                "name": "Because - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:4Smnlr2WoaZa4CUs0isAPU"
+            },
+            {
+                "name": "Hegel Kanti",
+                "artist": "Pluto's Doubts",
+                "album": "Sizif",
+                "uri": "spotify:track:0P1SLkOh98OqrWQWI00AvJ"
+            },
+            {
+                "name": "Babe I'm Gonna Leave You - Remaster",
+                "artist": "Led Zeppelin",
+                "album": "Led Zeppelin (Deluxe Edition)",
+                "uri": "spotify:track:1Y6xEUUKAVWO060yJRCces"
+            },
+            {
+                "name": "Hey",
+                "artist": "Pixies",
+                "album": "Doolittle",
+                "uri": "spotify:track:2Aqc48sn8He26hmTvQ2BMj"
+            },
+            {
+                "name": "Reptilia",
+                "artist": "The Strokes",
+                "album": "Room On Fire",
+                "uri": "spotify:track:57Xjny5yNzAcsxnusKmAfA"
+            },
+            {
+                "name": "King of Carrot Flowers Pt. 1",
+                "artist": "Neutral Milk Hotel",
+                "album": "In the Aeroplane Over the Sea",
+                "uri": "spotify:track:17Nowmq4iF2rkbd1rAe1Vt"
+            },
+            {
+                "name": "Mayonaise - Remastered",
+                "artist": "The Smashing Pumpkins",
+                "album": "Siamese Dream (2011 - Remaster)",
+                "uri": "spotify:track:0AJTKW9fVFo3rIXbtTVE3T"
+            },
+            {
+                "name": "No Surprises",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:1bSpwPhAxZwlR2enJJsv7U"
+            },
+            {
+                "name": "Octopus's Garden - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:3e1w0Wm0sH8nUYPArDkBG3"
+            },
+            {
+                "name": "Isolation - 2007 Remaster",
+                "artist": "Joy Division",
+                "album": "Closer (Collector's Edition)",
+                "uri": "spotify:track:1UWbBFaZNksb3AmgldkprR"
+            },
+            {
+                "name": "Karma Police",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:3SVAN3BRByDmHOhKyIDxfC"
+            },
+            {
+                "name": "Tranquility Base Hotel & Casino",
+                "artist": "Arctic Monkeys",
+                "album": "Tranquility Base Hotel & Casino",
+                "uri": "spotify:track:2URDbWGmPz3vhagl25p8OC"
+            },
+            {
+                "name": "Back In The U.S.S.R. - Remastered 2009",
+                "artist": "The Beatles",
+                "album": "The Beatles (Remastered)",
+                "uri": "spotify:track:0j3p1p06deJ7f9xmJ9yG22"
+            },
+            {
+                "name": "Airbag",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:3OsUjkcv1C1v5udFhgRSFg"
+            },
+            {
+                "name": "Coffee & TV",
+                "artist": "Blur",
+                "album": "13",
+                "uri": "spotify:track:5eSllZgRWCIJsDTAqFRwQw"
+            },
+            {
+                "name": "Brooklyn Bridge To Chorus",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:2mDYYGaGd9uXKkK2YhDA3i"
+            },
+            {
+                "name": "Super Jupiter",
+                "artist": "Pluto's Doubts",
+                "album": "Sizif",
+                "uri": "spotify:track:4RO7n2g70fB5NuCrSfNXik"
+            },
+            {
+                "name": "How Long?",
+                "artist": "Vampire Weekend",
+                "album": "Father of the Bride",
+                "uri": "spotify:track:4cih4QDlMIZ882wNQUhIlS"
+            },
+            {
+                "name": "Holland, 1945",
+                "artist": "Neutral Milk Hotel",
+                "album": "In the Aeroplane Over the Sea",
+                "uri": "spotify:track:4iwMhMvcTqukn1n3NVjb2N"
+            },
+            {
+                "name": "Fishing For Fishies",
+                "artist": "King Gizzard & The Lizard Wizard",
+                "album": "Fishing For Fishies",
+                "uri": "spotify:track:4BgbWIYZ2ulDemkKD9TO88"
+            },
+            {
+                "name": "Etna",
+                "artist": "Pluto's Doubts",
+                "album": "Sizif",
+                "uri": "spotify:track:3BRyQnfrt4MerXuh6GMqmm"
+            },
+            {
+                "name": "Hypocrite",
+                "artist": "Cage The Elephant",
+                "album": "Melophobia",
+                "uri": "spotify:track:4XrQ1D9Z1iwKMljqL2elgK"
+            },
+            {
+                "name": "In the Aeroplane Over the Sea",
+                "artist": "Neutral Milk Hotel",
+                "album": "In the Aeroplane Over the Sea",
+                "uri": "spotify:track:4OciRObYGzPzlU40U7YRc8"
+            },
+            {
+                "name": "Roundabout - 2003 Remaster",
+                "artist": "Yes",
+                "album": "Fragile (Deluxe Edition)",
+                "uri": "spotify:track:0YveezON7jpiaHA8fnUHxN"
+            },
+            {
+                "name": "I Against I",
+                "artist": [
+                    "Massive Attack",
+                    "Mos Def"
+                ],
+                "album": "Special Cases",
+                "uri": "spotify:track:07L2b1rNFcywc0coZYUzeV"
+            },
+            {
+                "name": "I Want You (She's So Heavy) - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:5h0yfg2KLqjVOKpCUTkBKo"
+            },
+            {
+                "name": "Climbing Up the Walls",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:0R332cdlS9LyE0Ge2PSlVC"
+            },
+            {
+                "name": "Selfless",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:2t0wwvR15fc3K1ey8OiOaN"
+            },
+            {
+                "name": "The Humbling River",
+                "artist": "Puscifer",
+                "album": "C Is For (Please Insert Sophomoric Genitalia Reference Here)",
+                "uri": "spotify:track:69GE6yPZZldvqtgBHrKXxg"
+            },
+            {
+                "name": "You Never Give Me Your Money - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:4kXXWWWIu0avePZXX7cBiW"
+            },
+            {
+                "name": "Paranoid Android",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:2nTsKOXIVGDf2iPeVQO2Gm"
+            },
+            {
+                "name": "Under Cover of Darkness",
+                "artist": "The Strokes",
+                "album": "Angles",
+                "uri": "spotify:track:6u0x5ad9ewHvs3z6u9Oe3c"
+            },
+            {
+                "name": "Cold Cold Cold",
+                "artist": "Cage The Elephant",
+                "album": "Tell Me I'm Pretty",
+                "uri": "spotify:track:1Q3t9fWvHUXKsMmpD2XpUu"
+            },
+            {
+                "name": "Dizajnerica laura",
+                "artist": "Svemirko",
+                "album": "Tunguzija",
+                "uri": "spotify:track:3mHFJGRu27Jy48jgoOxuFJ"
+            },
+            {
+                "name": "34, 5",
+                "artist": "Svemirko",
+                "album": "Tunguzija",
+                "uri": "spotify:track:2r29DogfAJSrmKorvav1pP"
+            },
+            {
+                "name": "Girl",
+                "artist": "Beck",
+                "album": "Guero",
+                "uri": "spotify:track:5hlGSG5h0mwsMYfRF0Yntc"
+            },
+            {
+                "name": "Fell In Love With a Girl",
+                "artist": "The White Stripes",
+                "album": "White Blood Cells",
+                "uri": "spotify:track:1yjr0GeoqGPejLg5P9g8Qe"
+            },
+            {
+                "name": "Morning Glory - Remastered",
+                "artist": "Oasis",
+                "album": "(What's The Story) Morning Glory? [Remastered]",
+                "uri": "spotify:track:0awZMpokrVSdvtYe1MdcWM"
+            },
+            {
+                "name": "Let Down",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:4aOAzvRdOsZSwZIgwcdeL0"
+            },
+            {
+                "name": "Bad Decisions",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:55N8cxpE1QDoeaaNqUnoZ2"
+            },
+            {
+                "name": "Gold on the Ceiling",
+                "artist": "The Black Keys",
+                "album": "El Camino",
+                "uri": "spotify:track:5lN1EH25gdiqT1SFALMAq1"
+            },
+            {
+                "name": "Float On",
+                "artist": "Modest Mouse",
+                "album": "Good News For People Who Love Bad News",
+                "uri": "spotify:track:2lwwrWVKdf3LR9lbbhnr6R"
+            },
+            {
+                "name": "Subterranean Homesick Alien",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:19yGmm9FjEZdZc5j98WDe4"
+            },
+            {
+                "name": "At The Door",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:7lu6YLrlB1MU7HW8DJSuPa"
+            },
+            {
+                "name": "Maxwell's Silver Hammer - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:0fnY9xlLJCgtBUBX9rNzDJ"
+            },
+            {
+                "name": "Spaceboy - Remastered",
+                "artist": "The Smashing Pumpkins",
+                "album": "Siamese Dream (2011 - Remaster)",
+                "uri": "spotify:track:6zwQeWS3allTz2jnhjuqUN"
+            },
+            {
+                "name": "Exit Music (For a Film)",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:4Na0siMtWOW9pJoWJ1Ponv"
+            },
+            {
+                "name": "Crumbling Castle",
+                "artist": "King Gizzard & The Lizard Wizard",
+                "album": "Polygondwanaland",
+                "uri": "spotify:track:5hiTOgD1obV1UMynKtvMCU"
+            },
+            {
+                "name": "Here Comes The Sun - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:3CPFHaVEHkkH26hAEPgMMp"
+            },
+            {
+                "name": "Soma - Remastered",
+                "artist": "The Smashing Pumpkins",
+                "album": "Siamese Dream (2011 - Remaster)",
+                "uri": "spotify:track:2EogyXM3vYmepKPkuaRAi5"
+            },
+            {
+                "name": "Electioneering",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:6PBHfI3G8MlQ8qdItoVoxL"
+            },
+            {
+                "name": "Closer",
+                "artist": "Nine Inch Nails",
+                "album": "The Downward Spiral (Deluxe Edition)",
+                "uri": "spotify:track:5mc6EyF1OIEOhAkD0Gg9Lc"
+            },
+            {
+                "name": "Something - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:3S6N0Wbem9KV3DBcYNfXuv"
+            },
+            {
+                "name": "Ode To The Mets",
+                "artist": "The Strokes",
+                "album": "The New Abnormal",
+                "uri": "spotify:track:1BLOVHYYlH4JUHQGcpt75R"
+            },
+            {
+                "name": "Fitter Happier",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:53aFGAl0Vebwp2bo8wtdWR"
+            },
+            {
+                "name": "Canned Heat",
+                "artist": "Jamiroquai",
+                "album": "Synkronized",
+                "uri": "spotify:track:0RWqE2ZaulvnN1i40qIhDh"
+            },
+            {
+                "name": "Sun King - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:0fdK9ykZqy0e3vn7LbluM1"
+            },
+            {
+                "name": "Don't Look Back in Anger - Remastered",
+                "artist": "Oasis",
+                "album": "(What's the Story) Morning Glory? [Deluxe Edition Remastered]",
+                "uri": "spotify:track:5nWrd6YulywWJIZSHdcdlM"
+            },
+            {
+                "name": "The Tourist",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:75YUnz58ajMo2VIIuUFvOV"
+            },
+            {
+                "name": "Two-Headed Boy",
+                "artist": "Neutral Milk Hotel",
+                "album": "In the Aeroplane Over the Sea",
+                "uri": "spotify:track:19Ov4l8mtvCT1iEUKks4aM"
+            },
+            {
+                "name": "The End - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:481payDhvwK4SluEdw2o5v"
+            },
+            {
+                "name": "Judith",
+                "artist": "A Perfect Circle",
+                "album": "Mer De Noms",
+                "uri": "spotify:track:5KDNFlHAdDJ84fhK27c35X"
+            },
+            {
+                "name": "Lucky",
+                "artist": "Radiohead",
+                "album": "OK Computer",
+                "uri": "spotify:track:6n7GUf2h8D2Ad2wUy5s7nE"
+            },
+            {
+                "name": "Rest My Chemistry",
+                "artist": "Interpol",
+                "album": "Our Love To Admire",
+                "uri": "spotify:track:2VbOnf4BivY15wG1GS5Vtv"
+            },
+            {
+                "name": "She Came In Through The Bathroom Window - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:52omU1KgD4yyRkXx2gDgZj"
+            },
+            {
+                "name": "Sympathy",
+                "artist": "Vampire Weekend",
+                "album": "Father of the Bride",
+                "uri": "spotify:track:2uERPFSsDSlaXojdVqK2kj"
+            },
+            {
+                "name": "Jigsaw Falling Into Place",
+                "artist": "Radiohead",
+                "album": "In Rainbows",
+                "uri": "spotify:track:15ea10YpJIl3mJq75yzqsD"
+            },
+            {
+                "name": "Cigarette Daydreams",
+                "artist": "Cage The Elephant",
+                "album": "Melophobia",
+                "uri": "spotify:track:6EThJr4Dq1Y93JspecGU2F"
+            },
+            {
+                "name": "Carry That Weight - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:7mBqyUKe8SUUoFBjTiY8Um"
+            },
+            {
+                "name": "Hard To Explain",
+                "artist": "The Strokes",
+                "album": "Is This It",
+                "uri": "spotify:track:2LMloFiV7DHpBhITOaBSam"
+            },
+            {
+                "name": "Oh Comely",
+                "artist": "Neutral Milk Hotel",
+                "album": "In the Aeroplane Over the Sea",
+                "uri": "spotify:track:0aP5ZTP3o3IvqNvGZ8OUUq"
+            },
+            {
+                "name": "Ready To Let Go",
+                "artist": "Cage The Elephant",
+                "album": "Social Cues",
+                "uri": "spotify:track:4UyAtnwhaKv7EG1BdkBYRI"
+            },
+            {
+                "name": "Golden Slumbers - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:4FWAzXcVNVIRVA4UQxhvbd"
+            },
+            {
+                "name": "Hurt",
+                "artist": "Nine Inch Nails",
+                "album": "The Downward Spiral (Deluxe Edition)",
+                "uri": "spotify:track:06E2wdQZkuZCErWNK26l0U"
+            },
+            {
+                "name": "Cherub Rock - Remastered 2011",
+                "artist": "The Smashing Pumpkins",
+                "album": "Siamese Dream (2011 - Remaster)",
+                "uri": "spotify:track:0F2LiyHp9E0pAanpfnzHNp"
+            },
+            {
+                "name": "Machka vo vrekja",
+                "artist": "Foltin",
+                "album": "Momoma",
+                "uri": "spotify:track:1Yr2Ti1SRBm09qBR5tH7EY"
+            },
+            {
+                "name": "Polythene Pam - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:7BavH3tDEsEDKnntiVTaAu"
+            },
+            {
+                "name": "Radio/Video",
+                "artist": "System Of A Down",
+                "album": "Mezmerize",
+                "uri": "spotify:track:41pOIT2t1rvr2Trg1HQChZ"
+            },
+            {
+                "name": "Mesechina",
+                "artist": "Foltin",
+                "album": "Momoma",
+                "uri": "spotify:track:7ywZL88IBt6Mvv7SgxzEv0"
+            },
+            {
+                "name": "Mean Mr Mustard - 2019 Mix",
+                "artist": "The Beatles",
+                "album": "Abbey Road (Super Deluxe Edition)",
+                "uri": "spotify:track:25jKgfxWqISbOF5qjowYDa"
+            },
+            {
+                "name": "Sizif",
+                "artist": "Pluto's Doubts",
+                "album": "Sizif",
+                "uri": "spotify:track:6NFWkzRCqZkdanUi8DDRcG"
+            },
+            {
+                "name": "Dashboard",
+                "artist": "Modest Mouse",
+                "album": "We Were Dead Before The Ship Even Sank",
+                "uri": "spotify:track:0Fe3WxeO6lZZxj7ytvbDUh"
+            },
+            {
+                "name": "Juicebox",
+                "artist": "The Strokes",
+                "album": "First Impressions Of Earth",
+                "uri": "spotify:track:3jjQHULAVn71k40mKwGMiV"
+            },
+            {
+                "name": "Lucy In The Sky With Diamonds - Remastered 2009",
+                "artist": "The Beatles",
+                "album": "Sgt. Pepper's Lonely Hearts Club Band (Remastered)",
+                "uri": "spotify:track:25yQPHgC35WNnnOUqFhgVR"
+            },
+            {
+                "name": "Odgovoran ljubavnik",
+                "artist": "Svemirko",
+                "album": "Tunguzija",
+                "uri": "spotify:track:08si4MSsblBjylepzTQqaY"
+            }
+        ]
+    }
+]
