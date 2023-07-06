@@ -6,6 +6,8 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { SSAARenderPass } from 'three/addons/postprocessing/SSAARenderPass.js'
 
+import { throttle } from 'lodash-es';
+
 import computerUrl from '/static/models/computer.gltf?url';
 import magionicarUrl from '/static/models/magionicar.gltf?url';
 
@@ -128,3 +130,42 @@ function animate() {
 
 
 }
+
+
+const resizeUpdateInterval = 500;
+
+window.addEventListener(
+  'resize',
+  throttle(
+    () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      camera.aspect = width / height;
+      renderer.setSize(width, height);
+      setCanvasDimensions(renderer.domElement, width, height, true);
+      camera.updateProjectionMatrix();
+
+    },
+    resizeUpdateInterval,
+    { trailing: true }
+  )
+);
+
+function setCanvasDimensions(
+    canvas,
+    width,
+    height,
+    set2dTransform = false
+  ) {
+    const ratio = window.devicePixelRatio *1.5;
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    if (set2dTransform) {
+      canvas.getContext('2d').setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+  }
+  
+
+

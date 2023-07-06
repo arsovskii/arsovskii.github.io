@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "tailwindcss": "^3.3.2",
     "three": "^0.154.0"
   },
@@ -9,6 +11,7 @@
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",
-    "compile": "npx tailwindcss -i ./static/css/input.css -o ./dist/output.css && vite build && cp ./static/models/* ./dist/assets/ "
+    "compile": "npx tailwindcss -i ./static/css/input.css -o ./dist/output.css && vite build && cp ./static/models/* ./dist/assets/ ",
+    "tail": "npx tailwindcss -i ./static/css/input.css -o ./dist/output.css --watch"
   }
 }
