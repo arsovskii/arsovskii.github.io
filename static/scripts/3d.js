@@ -1,9 +1,13 @@
-import * as THREE from 'three'
+import * as THREE from 'three';
+
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
 import { SSAARenderPass } from 'three/addons/postprocessing/SSAARenderPass.js'
+
+import computerUrl from '/static/models/computer.gltf?url';
+import magionicarUrl from '/static/models/magionicar.gltf?url';
 
 
 const numOfElements = 10;
@@ -45,7 +49,7 @@ camera.position.z = 5;
 
 var elems = [];
 
-loader.load('./static/models/computer.gltf', function (gltf) {
+loader.load(computerUrl, function (gltf) {
 
     for (let i = 0; i < numOfElements; i++) {
         let curr = gltf.scene.clone()
@@ -63,7 +67,7 @@ loader.load('./static/models/computer.gltf', function (gltf) {
         elems[i]['yRot'] = THREE.MathUtils.randFloat(-0.01, 0.01);
 
     }
-    loader.load('./static/models/magionicar.gltf', function (magionicar) {
+    loader.load(magionicarUrl, function (magionicar) {
 
         for (let i = numOfElements; i < numOfElements * 2; i++) {
 

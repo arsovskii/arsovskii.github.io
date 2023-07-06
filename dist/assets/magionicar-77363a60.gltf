@@ -1,0 +1,252 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.6.27",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_specular",
+    "KHR_materials_ior",
+    "KHR_materials_emissive_strength"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Untitled",
+      "rotation": [
+        0.4990648925304413,
+        0.5009334683418274,
+        -0.5009334087371826,
+        0.49906492233276367
+      ],
+      "translation": [
+        0,
+        1.0884461402893066,
+        -0.015522241592407227
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0,
+            0,
+            0
+          ]
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      },
+      "name": "palette",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1,
+        0.7134013175964355,
+        0.0010041026398539543
+      ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 12.499998092651367
+        }
+      },
+      "name": "light",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Untitled",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "magionicar",
+      "uri": "magionicar_img0.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 857,
+      "max": [
+        0.6020902991294861,
+        0.050002217292785645,
+        0.9940770268440247
+      ],
+      "min": [
+        -0.6979097127914429,
+        -0.049997806549072266,
+        -1.1059229373931885
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 857,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 857,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 1671,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 55,
+      "max": [
+        0.8020902872085571,
+        0.050002217292785645,
+        0.09407705068588257
+      ],
+      "min": [
+        0.5020902752876282,
+        -0.049997806549072266,
+        -0.20592302083969116
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 55,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 55,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 105,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 10284,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10284,
+      "byteOffset": 10284,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6856,
+      "byteOffset": 20568,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3344,
+      "byteOffset": 27424,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 660,
+      "byteOffset": 30768,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 660,
+      "byteOffset": 31428,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 440,
+      "byteOffset": 32088,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 212,
+      "byteOffset": 32528,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "magionicar_data.bin",
+      "byteLength": 32740
+    }
+  ]
+}
