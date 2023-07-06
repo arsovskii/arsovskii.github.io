@@ -37,8 +37,12 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Install tailwind
+        run: npx tailwindcss -i ./static/css/input.css -o ./dist/output.css
       - name: Build
         run: npm run build
+      - name: Copy Files
+        run: cp ./static/models/* ./dist/assets/ 
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
