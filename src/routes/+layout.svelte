@@ -1,5 +1,7 @@
 <script>
-  import '../app.css';
+  export const prerender = true;
+  export const trailingSlash = "always";
+  import "../app.css";
 </script>
 
 <div class="layout">
@@ -8,7 +10,7 @@
     <div class="links">
       <a href="#projects">projects</a>
       <a href="#education">education</a>
-	  <a href="#jams">jams</a>
+      <a href="#jams">jams</a>
       <a href="#about">about</a>
       <a href="#contact">contact</a>
     </div>
@@ -40,14 +42,17 @@
     color: var(--brand); /* Make the logo pop */
   }
 
-  .links { display: flex; gap: 1.5rem; }
+  .links {
+    display: flex;
+    gap: 1.5rem;
+  }
 
   /* Animated underline for nav links */
   .links a {
     position: relative;
   }
   .links a::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 1px;
@@ -63,7 +68,9 @@
     transform-origin: bottom left;
   }
 
-  main { flex: 1; }
+  main {
+    flex: 1;
+  }
   footer {
     margin-top: 6rem;
     font-size: 0.85rem;
