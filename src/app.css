@@ -1,0 +1,39 @@
+:root {
+  --bg: #0a0a0a;
+  --text: #ededed;
+  --text-muted: #888888;
+  --border: #222222;
+  
+  /* Global Accent Color - Change this to theme the site */
+  --brand: #ff58db; 
+  /* Automatically derives a translucent version for backgrounds/glows */
+  --brand-dim: color-mix(in srgb, var(--brand) 10%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body { margin: 0; padding: 0; }
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+h1, h2, h3 { margin: 0; font-weight: 500; }
+
+/* Selection highlight using the brand color */
+::selection {
+  background: var(--brand);
+  color: #000;
+}
