@@ -16,7 +16,7 @@ const config = {
       // these options are set automatically - see below
       pages: "build",
       assets: "build",
-      fallback: "index.html", // Important for SPA routing
+      fallback: "404.html", // Important for SPA routing
       precompress: false,
       strict: true,
     }),
