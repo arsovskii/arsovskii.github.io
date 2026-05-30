@@ -16,12 +16,12 @@ const config = {
       // these options are set automatically - see below
       pages: "build",
       assets: "build",
-      fallback: "index.html",
+      fallback: "index.html", // Important for SPA routing
       precompress: false,
       strict: true,
     }),
     paths: {
-      base: process.env.BASE_PATH || "",
+      base: "/sveltekit-gh-pages",
     },
   },
 };
