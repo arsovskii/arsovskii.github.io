@@ -1,6 +1,4 @@
 <script>
-  export const prerender = true;
-  export const trailingSlash = "always";
   import "../app.css";
 </script>
 
@@ -8,11 +6,11 @@
   <nav>
     <a href="/" class="logo">David Arsovski.</a>
     <div class="links">
-      <a href="#projects">projects</a>
-      <a href="#education">education</a>
-      <a href="#jams">jams</a>
-      <a href="#about">about</a>
-      <a href="#contact">contact</a>
+      <a href="/#projects">projects</a>
+      <a href="/#education">education</a>
+      <a href="/#jams">jams</a>
+      <a href="/#about">about</a>
+      <a href="/#contact">contact</a>
     </div>
   </nav>
   <main><slot /></main>

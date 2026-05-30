@@ -20,10 +20,7 @@ const config = {
       precompress: false,
       strict: true,
     }),
-	appDir: "app", 
-    paths: {
-      base: "/sveltekit-gh-pages",
-    },
+    
   },
 };
 
