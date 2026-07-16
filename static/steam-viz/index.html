@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Steam Game Embeddings</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  body{margin:0;background:#0e1117;color:#e0e0e0;font-family:-apple-system,sans-serif;}
+  #loading{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;font-size:16px;color:#aaa;}
+  #plot{width:100vw;height:100vh;}
+
+  #controls {
+    position: fixed; top: 16px; left: 16px; z-index: 10; display: flex; flex-direction: column; gap: 8px;
+    background: rgba(30, 34, 48, 0.9); padding: 16px; border: 1px solid #555; 
+    border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); width: 240px;
+  }
+  #controls label { font-size: 11px; color: #aaa; text-transform: uppercase; font-weight: bold; margin-bottom: -4px; }
+  #controls select, #controls input {
+    background: #0e1117; color: #e0e0e0; border: 1px solid #555; padding: 8px 10px;
+    font-size: 13px; border-radius: 4px; outline: none; width: 100%; box-sizing: border-box;
+  }
+  #controls input::placeholder { color: #666; }
+  #controls select:focus, #controls input:focus { border-color: #3BBCBD; }
+  #btn-clear {
+    background: #e05c5c; color: #fff; font-weight: bold; border: none; padding: 8px;
+    border-radius: 4px; cursor: pointer; margin-top: 4px; transition: 0.2s;
+  }
+  #btn-clear:hover { background: #ff7070; }
+</style>
+</head>
+<body>
+<div id="loading">Loading embeddings…</div>
+
+<div id="controls" style="display:none;">
+  <label>Color Mode</label>
+  <select id="color-mode"></select>
+
+  <label>Search Game</label>
+  <input type="text" id="search-game" list="game-datalist" placeholder="Type a game name...">
+
+  <label>Highlight Developer</label>
+  <input type="text" id="search-dev" list="dev-datalist" placeholder="Type a dev name...">
+
+  <button id="btn-clear">Clear Highlights</button>
+</div>
+
+<datalist id="game-datalist"></datalist>
+<datalist id="dev-datalist"></datalist>
+
+<div id="plot" style="display:none;"></div>
+
+<script>
+const PALETTE = ["#5B8DEF","#E05C5C","#4CAF7D","#F0A500","#9C6ADE","#E8835A","#3BBCBD",
+                 "#D65CA0","#8BC34A","#607D8B","#FF7043","#26C6DA","#AB47BC","#66BB6A",
+                 "#FFA726","#EF5350","#42A5F5","#26A69A","#D4E157","#7E57C2"];
+
+async function main() {
+  const [manifest, buf, namesTxt] = await Promise.all([
+    fetch("viz_manifest.json").then(r => r.json()),
+    fetch("viz_data.bin").then(r => r.arrayBuffer()),
+    fetch("viz_names.txt").then(r => r.text()),
+  ]);
+
+  // Strip \r to fix Windows issues, and trim whitespace
+  const names = namesTxt.replace(/\r/g, "").split("\n").map(n => n.trim());
+  const off = manifest.offsets;
+  const n = manifest.n;
+  const NA = manifest.na;
+
+  const dtypeArr = { float32: Float32Array, int32: Int32Array, int16: Int16Array, uint8: Uint8Array };
+  function readField(key) {
+    const o = off[key];
+    const Ctor = dtypeArr[o.dtype];
+    return new Ctor(buf, o.offset, o.length / Ctor.BYTES_PER_ELEMENT);
+  }
+
+  const x = readField("x"), y = readField("y");
+  const posRatio = readField("pos_ratio"), revCount = readField("rev_count");
+  const price = readField("price_usd"), discount = readField("discount_pct");
+  const meta = readField("metacritic"), year = readField("release_year");
+  const isFree = readField("is_free");
+  const typeId = readField("type_id");
+  const genreIds = readField("genre_ids"), devIds = readField("dev_ids");
+  const pubIds = readField("pub_ids"), platIds = readField("plat_ids");
+  const K = { genre: manifest.k_genre, dev: manifest.k_dev, pub: manifest.k_pub, platform: manifest.k_platform };
+  const vocab = manifest.vocab;
+
+  function padSlice(arr, k, i) { return arr.subarray(i*k, i*k+k); }
+  function idsToNames(ids, vocabArr) {
+    const out = [];
+    for (const id of ids) if (id >= 0) out.push(vocabArr[id]);
+    return out;
+  }
+
+  console.log("Building hover text ...");
+  const hoverText = new Array(n);
+  for (let i = 0; i < n; i++) {
+    const genres = idsToNames(padSlice(genreIds, K.genre, i), vocab.genre).join(", ") || "Unknown";
+    const devs   = idsToNames(padSlice(devIds,   K.dev,   i), vocab.dev).join(", ") || "Unknown";
+    const pubs   = idsToNames(padSlice(pubIds,   K.pub,   i), vocab.pub).join(", ") || "Unknown";
+    const plats  = idsToNames(padSlice(platIds,  K.platform, i), vocab.platform).join(", ") || "Unknown";
+    const priceStr = isFree[i] ? "Free" : (price[i] === NA ? "N/A" : "$" + price[i].toFixed(2));
+
+    hoverText[i] =
+      `<b>${names[i]}</b><br>` +
+      `Type: ${vocab.type[typeId[i]].toUpperCase()}<br>` +
+      `Genres: ${genres}<br>` +
+      `Developers: ${devs}<br>` +
+      `Publishers: ${pubs}<br>` +
+      `Positive: ${posRatio[i]===NA?"N/A":Math.round(posRatio[i]*100)+"%"}  |  Reviews: ${revCount[i]===NA?"N/A":revCount[i].toLocaleString()}<br>` +
+      `Price: ${priceStr}  |  Discount: ${discount[i]===NA?0:discount[i]}%<br>` +
+      `Metacritic: ${meta[i]===NA?"N/A":meta[i]}  |  Year: ${year[i]===NA?"N/A":year[i]}<br>` +
+      `Platforms: ${plats}`;
+  }
+
+  function normLinear(arr) {
+    let mn = Infinity, mx = -Infinity;
+    for (const v of arr) if (v !== NA) { if (v<mn) mn=v; if (v>mx) mx=v; }
+    return Array.from(arr, v => v===NA ? 0 : (v-mn)/(mx-mn+1e-9));
+  }
+  function normLog(arr) {
+    const safe = Array.from(arr, v => (v===NA||v<0) ? 0 : v);
+    return normLinear(safe.map(v => Math.log1p(v)));
+  }
+
+  const baseMarker = { size: 4, opacity: 0.75, line: { width: 0 } };
+  const hoverlabel = { bgcolor: "#1e2230", bordercolor: "#555", font: { size: 11, color: "#e0e0e0" } };
+
+  function continuousTrace(colorArr, colorscale) {
+    return [{
+      x, y, mode: "markers", type: "scattergl",
+      marker: { ...baseMarker, color: colorArr, colorscale, showscale: true,
+                colorbar: { thickness: 12, len: 0.55, bgcolor:"#1e2230", bordercolor:"#555", tickfont:{size:10,color:"#aaa"} } },
+      text: hoverText, hoverinfo: "text", hoverlabel,
+    }];
+  }
+
+  function groupsToTraces(groups, vocabArr) {
+    const sorted = Array.from(groups.entries()).sort((a,b) => b[1].xi.length - a[1].xi.length);
+    return sorted.map(([id, g], idx) => ({
+      x: g.xi, y: g.yi, mode: "markers", type: "scattergl",
+      marker: { ...baseMarker, color: PALETTE[idx % PALETTE.length] },
+      text: g.ti, hoverinfo: "text", hoverlabel, name: vocabArr[id], showlegend: true,
+    }));
+  }
+
+  function categoricalTraces(idsArr, k, vocabArr) {
+    const groups = new Map();
+    for (let i = 0; i < n; i++) {
+      for (const id of padSlice(idsArr, k, i)) {
+        if (id < 0) continue;
+        if (!groups.has(id)) groups.set(id, { xi: [], yi: [], ti: [] });
+        groups.get(id).xi.push(x[i]); groups.get(id).yi.push(y[i]); groups.get(id).ti.push(hoverText[i]);
+      }
+    }
+    return groupsToTraces(groups, vocabArr);
+  }
+
+  function typeTraces() {
+    const groups = new Map();
+    for (let i = 0; i < n; i++) {
+      const id = typeId[i];
+      if (!groups.has(id)) groups.set(id, { xi: [], yi: [], ti: [] });
+      groups.get(id).xi.push(x[i]); groups.get(id).yi.push(y[i]); groups.get(id).ti.push(hoverText[i]);
+    }
+    return groupsToTraces(groups, vocab.type);
+  }
+
+  const cache = {};
+  function getTraces(mode) {
+    if (cache[mode]) return cache[mode];
+    let traces;
+    switch (mode) {
+      case "pos_ratio":  traces = continuousTrace(Array.from(posRatio, v=>v===NA?0:v), "RdYlGn"); break;
+      case "rev_count":  traces = continuousTrace(normLog(revCount), "Blues"); break;
+      case "price":      traces = continuousTrace(normLog(price), "Plasma"); break;
+      case "discount":   traces = continuousTrace(normLinear(discount), "OrRd"); break;
+      case "metacritic": traces = continuousTrace(normLinear(meta), "RdYlGn"); break;
+      case "year":       traces = continuousTrace(normLinear(year), "Viridis"); break;
+      case "type":       traces = typeTraces(); break;
+      case "genre":      traces = categoricalTraces(genreIds, K.genre, vocab.genre); break;
+      case "dev":        traces = categoricalTraces(devIds, K.dev, vocab.dev); break;
+      case "pub":        traces = categoricalTraces(pubIds, K.pub, vocab.pub); break;
+      case "platform":   traces = categoricalTraces(platIds, K.platform, vocab.platform); break;
+      default: traces = continuousTrace(Array.from(posRatio, v=>v===NA?0:v), "RdYlGn"); break;
+    }
+    return (cache[mode] = traces);
+  }
+
+  const modes = [
+    ["pos_ratio", "Positive ratio"], ["rev_count", "Review count"],
+    ["price", "Price (USD)"], ["discount", "Discount %"],
+    ["metacritic", "Metacritic score"], ["year", "Release year"],
+    ["type", "Type"], ["genre", "Genre"], ["dev", "Developer"],
+    ["pub", "Publisher"], ["platform", "Platform"],
+  ];
+
+  // --- STATE AND LOOKUP MAPS ---
+  let currentMode = "pos_ratio";
+  let searchIdx = -1;
+  let highlightDevId = -1;
+
+  // Create lowercase fast-lookup arrays for bulletproof search matching
+  const lowerNames = names.map(n => n.toLowerCase());
+  const lowerDevs = vocab.dev.map(d => d.toLowerCase());
+
+  // --- UPDATE PLOT FUNCTION ---
+  function updatePlot() {
+    const hasHighlight = (searchIdx >= 0) || (highlightDevId >= 0);
+    const dynamicOpacity = hasHighlight ? 0.05 : 0.75; 
+
+    const finalTraces = getTraces(currentMode).map(t => ({
+      ...t, marker: { ...t.marker, opacity: dynamicOpacity }
+    }));
+
+    const layout = {
+      title: { text: `Steam games — ${modes.find(m => m[0] === currentMode)[1]}`, font: { size: 18, color: "#e0e0e0" } },
+      paper_bgcolor: "#0e1117", plot_bgcolor: "#0e1117", font: { color: "#e0e0e0" },
+      xaxis: { showgrid: false, zeroline: false, showticklabels: false },
+      yaxis: { showgrid: false, zeroline: false, showticklabels: false },
+      legend: { font: { size: 9, color: "#ccc" }, bgcolor: "rgba(30,34,48,0.85)" },
+      margin: { l: 20, r: 200, t: 80, b: 20 },
+      annotations: []
+    };
+
+    if (highlightDevId >= 0) {
+      const hx = [], hy = [], ht = [];
+      for (let i = 0; i < n; i++) {
+        if (padSlice(devIds, K.dev, i).includes(highlightDevId)) {
+          hx.push(x[i]); hy.push(y[i]); ht.push(hoverText[i]);
+        }
+      }
+      finalTraces.push({
+        x: hx, y: hy, mode: "markers", type: "scattergl",
+        marker: { size: 7, color: "#FFD700", opacity: 0.9, line: {width: 1, color: "#000"} },
+        text: ht, hoverinfo: "text", hoverlabel,
+        name: `Dev: ${vocab.dev[highlightDevId]}`, showlegend: true
+      });
+    }
+
+    if (searchIdx >= 0) {
+      finalTraces.push({
+        x: [x[searchIdx]], y: [y[searchIdx]], mode: "markers", type: "scattergl",
+        marker: { size: 16, color: "#fff", symbol: "star", line: {width: 2, color: "#E05C5C"} },
+        text: [hoverText[searchIdx]], hoverinfo: "text", hoverlabel, showlegend: false
+      });
+      layout.annotations.push({
+        x: x[searchIdx], y: y[searchIdx], text: names[searchIdx],
+        showarrow: true, arrowhead: 2, arrowsize: 1.5, arrowcolor: "#E05C5C", ax: 0, ay: -40,
+        font: { color: "#fff", size: 13, weight: "bold" }, bgcolor: "#E05C5C", bordercolor: "#fff", borderpad: 4
+      });
+    }
+
+    Plotly.react(plotDiv, finalTraces, layout, {
+      scrollZoom: true, displayModeBar: true, modeBarButtonsToRemove: ["select2d","lasso2d"]
+    });
+  }
+
+  // --- INITIALIZE UI ---
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("controls").style.display = "flex";
+  const plotDiv = document.getElementById("plot");
+  plotDiv.style.display = "block";
+
+  const modeSelect = document.getElementById("color-mode");
+  for (const [key, label] of modes) {
+    const opt = document.createElement("option");
+    opt.value = key; opt.textContent = label;
+    modeSelect.appendChild(opt);
+  }
+
+  setTimeout(() => {
+    function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+    document.getElementById("game-datalist").innerHTML = names.map(n => `<option value="${esc(n)}">`).join("");
+    document.getElementById("dev-datalist").innerHTML  = vocab.dev.map(d => `<option value="${esc(d)}">`).join("");
+  }, 100);
+
+  // --- EVENT LISTENERS ---
+  modeSelect.addEventListener("change", e => { currentMode = e.target.value; updatePlot(); });
+
+  const searchGameInput = document.getElementById("search-game");
+  searchGameInput.addEventListener("input", e => {
+    const val = e.target.value.trim().toLowerCase();
+    const newIdx = val ? lowerNames.indexOf(val) : -1;
+    if (newIdx !== searchIdx) {
+      searchIdx = newIdx;
+      updatePlot(); 
+    }
+  });
+
+  const searchDevInput = document.getElementById("search-dev");
+  searchDevInput.addEventListener("input", e => {
+    const val = e.target.value.trim().toLowerCase();
+    const newId = val ? lowerDevs.indexOf(val) : -1;
+    if (newId !== highlightDevId) {
+      highlightDevId = newId;
+      updatePlot();
+    }
+  });
+
+  document.getElementById("btn-clear").addEventListener("click", () => {
+    searchGameInput.value = ""; searchDevInput.value = "";
+    if (searchIdx !== -1 || highlightDevId !== -1) {
+      searchIdx = -1; highlightDevId = -1;
+      updatePlot();
+    }
+  });
+
+  // Render initial plot
+  updatePlot();
+}
+
+main().catch(err => {
+  document.getElementById("loading").textContent = "Failed to load: " + err.message;
+  console.error(err);
+});
+</script>
+</body>
+</html>
